@@ -6,16 +6,22 @@
     @include clearfix();
 }
 
-.1024-width {
-    max-width:1024px;
-}
-.800-width {
-    max-width:800px;
-}
-.640-width {
-    max-width:640px;
+.inline-row {
+    text-align:center;
 }
 
+.width-1024 {
+    max-width:1024px;
+}
+.width-800 {
+    max-width:800px;
+}
+.width-640 {
+    max-width:640px;
+}
+.row.centered {
+    margin:0 auto;
+}
 .padding {
     padding:16px;
 }
@@ -30,6 +36,11 @@
 
 .cell {
     float:left;
+    box-sizing: border-box;
+}
+
+.inline-cell {
+    display:inline-block;
     box-sizing: border-box;
 }
 

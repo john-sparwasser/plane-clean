@@ -418,6 +418,9 @@ template {
 .outline {
   border: 1px solid black; }
 
+h1.centered, h2.centered, h3.centered, h4.centered, h5.centered, p.centered {
+  text-align: center; }
+
 .column {
   margin: 0 auto; }
 
@@ -426,14 +429,20 @@ template {
   content: "";
   clear: both; }
 
-.1024-width {
+.inline-row {
+  text-align: center; }
+
+.width-1024 {
   max-width: 1024px; }
 
-.800-width {
+.width-800 {
   max-width: 800px; }
 
-.640-width {
+.width-640 {
   max-width: 640px; }
+
+.row.centered {
+  margin: 0 auto; }
 
 .padding {
   padding: 16px; }
@@ -446,6 +455,10 @@ template {
 
 .cell {
   float: left;
+  box-sizing: border-box; }
+
+.inline-cell {
+  display: inline-block;
   box-sizing: border-box; }
 
 .half {
@@ -481,6 +494,7 @@ input[type="button"], .button {
   letter-spacing: 0.1em;
   cursor: pointer;
   box-shadow: rgba(23, 43, 99, 0.24) 0 7px 28px;
+  display: inline-block;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
   -webkit-transition-property: all;

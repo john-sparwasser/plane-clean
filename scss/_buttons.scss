@@ -10,6 +10,7 @@ input[type="button"], .button {
     letter-spacing:0.1em;
     cursor:pointer;
     box-shadow: rgba(23, 43, 99, 0.24) 0 7px 28px;
+    display:inline-block;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     -webkit-transition-property: all;
