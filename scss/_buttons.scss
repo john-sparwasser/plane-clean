@@ -1,13 +1,13 @@
 @mixin buttons($main-color, $secondary-color, $tertiary-color, $font-color) {
     input[type="button"], .button {
-        background-color:$main-color;
+        @include linear-gradient($main-color);
         border-radius:3px;
         color:#fff;
         padding:15px 22px;
         font-size:14px;
         text-transform:uppercase;
         border:none;
-        font-weight:bold;
+        font-weight:300;
         letter-spacing:0.1em;
         cursor:pointer;
         box-shadow: rgba(23, 43, 99, 0.24) 0 7px 28px;
@@ -30,10 +30,13 @@
             box-shadow: rgba(23, 43, 99, 0.24) 0 3px 18px;
         }
         &.ghost {
-            background-color:transparent;
+            background:transparent;
             border:1px solid $main-color;
             color:$main-color;
             box-shadow:none;
+        }
+        &.large {
+            padding:23px 30px;
         }
     }
 

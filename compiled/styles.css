@@ -1,3 +1,6 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
        ========================================================================== */
@@ -497,13 +500,17 @@ html {
 
 input[type="button"], .button {
   background-color: #01bc4e;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #01c652), color-stop(100%, #01b24a));
+  background: -moz-linear-gradient(#01c652, #01b24a);
+  background: -webkit-linear-gradient(#01c652, #01b24a);
+  background: linear-gradient(#01c652, #01b24a);
   border-radius: 3px;
   color: #fff;
   padding: 15px 22px;
   font-size: 14px;
   text-transform: uppercase;
   border: none;
-  font-weight: bold;
+  font-weight: 300;
   letter-spacing: 0.1em;
   cursor: pointer;
   box-shadow: rgba(23, 43, 99, 0.24) 0 7px 28px;
@@ -524,10 +531,12 @@ input[type="button"], .button {
     -webkit-box-shadow: rgba(23, 43, 99, 0.24) 0 3px 18px;
     box-shadow: rgba(23, 43, 99, 0.24) 0 3px 18px; }
   input[type="button"].ghost, .button.ghost {
-    background-color: transparent;
+    background: transparent;
     border: 1px solid #01bc4e;
     color: #01bc4e;
     box-shadow: none; }
+  input[type="button"].large, .button.large {
+    padding: 23px 30px; }
 
 a.button {
   text-decoration: none; }
