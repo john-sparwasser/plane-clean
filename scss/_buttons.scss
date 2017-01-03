@@ -1,6 +1,8 @@
 @mixin buttons($main-color, $secondary-color, $tertiary-color, $font-color) {
     input[type="button"], .button {
         @include linear-gradient($main-color);
+        @include remove-input-outline();
+        display:inline-block;
         border-radius:3px;
         color:#fff;
         padding:15px 22px;
@@ -11,15 +13,11 @@
         letter-spacing:0.1em;
         cursor:pointer;
         box-shadow: rgba(23, 43, 99, 0.24) 0 7px 28px;
-        display:inline-block;
         -webkit-transition-duration: 0.2s;
         transition-duration: 0.2s;
         -webkit-transition-property: all;
         transition-property: all;
         -webkit-tap-highlight-color: transparent;
-        &:focus {
-            outline:0;
-        }
         &:active {
             -moz-transform: scale3d(0.94, 0.94, 0.94);
             -ms-transform: scale3d(0.94, 0.94, 0.94);
@@ -31,9 +29,13 @@
         }
         &.ghost {
             background:transparent;
-            border:1px solid $main-color;
-            color:$main-color;
+            border:1px solid lighten($main-color, 6%);
+            color:lighten($main-color, 3%);
             box-shadow:none;
+            font-weight:300;
+            &:hover {
+                border:1px solid $main-color;
+            }
         }
         &.large {
             padding:23px 30px;

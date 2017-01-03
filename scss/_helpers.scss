@@ -22,3 +22,9 @@
     background: -webkit-linear-gradient($start,$finish);
     background: linear-gradient($start,$finish);
 }
+
+@mixin remove-input-outline() {
+    &:focus {
+        outline:0;
+    }
+}

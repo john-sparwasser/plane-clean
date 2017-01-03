@@ -504,6 +504,7 @@ input[type="button"], .button {
   background: -moz-linear-gradient(#01c652, #01b24a);
   background: -webkit-linear-gradient(#01c652, #01b24a);
   background: linear-gradient(#01c652, #01b24a);
+  display: inline-block;
   border-radius: 3px;
   color: #fff;
   padding: 15px 22px;
@@ -514,7 +515,6 @@ input[type="button"], .button {
   letter-spacing: 0.1em;
   cursor: pointer;
   box-shadow: rgba(23, 43, 99, 0.24) 0 7px 28px;
-  display: inline-block;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
   -webkit-transition-property: all;
@@ -532,9 +532,12 @@ input[type="button"], .button {
     box-shadow: rgba(23, 43, 99, 0.24) 0 3px 18px; }
   input[type="button"].ghost, .button.ghost {
     background: transparent;
-    border: 1px solid #01bc4e;
-    color: #01bc4e;
-    box-shadow: none; }
+    border: 1px solid #01da5b;
+    color: #01cb54;
+    box-shadow: none;
+    font-weight: 300; }
+    input[type="button"].ghost:hover, .button.ghost:hover {
+      border: 1px solid #01bc4e; }
   input[type="button"].large, .button.large {
     padding: 23px 30px; }
 
@@ -568,6 +571,12 @@ input[type=text], input[type=email], input[type=password], input[type=number] {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
+  input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus {
+    outline: 0; }
+  input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, input[type=number]:hover {
+    border: 1px solid #b2bbc9; }
+  input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus {
+    border: 1px solid #01bc4e; }
 
 .outline {
   border: 1px solid black; }
