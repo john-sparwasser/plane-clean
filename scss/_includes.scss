@@ -1,6 +1,8 @@
 @import 'normalize/normalize';
-@import 'mixins';
+@import 'constructor';
+@import 'helpers';
 @import 'common';
-@import 'colors';
 @import 'grid';
+@import 'flex';
 @import 'buttons';
+@import 'inputs';

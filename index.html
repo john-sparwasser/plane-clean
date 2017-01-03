@@ -7,11 +7,12 @@
     <title>John Sparwasser</title>
     <meta name="description" content="Kit of parts">
     <meta name="author" content="John Sparwasser">
-
-    <link rel="stylesheet" href="compiled/includes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="compiled/styles.css">
 </head>
 
 <body>
+
     <p><a class="button" href="https://google.com">Link Button</a></p>
     <br />
     <p><input type="button" value="Input Button" /></p>
@@ -23,24 +24,48 @@
 
     <h2 class="centered">1024 px wide centered row</h2>
     <div class="centered width-1024 row">
-        <div class="cell fifth outline"><p>One fifth sized cell</div>
-        <div class="cell fifth outline"><p>One fifth sized cell</div>
-        <div class="cell fifth outline"><p>One fifth sized cell</div>
-        <div class="cell fifth outline"><p>One fifth sized cell</div>
-        <div class="cell fifth outline"><p>One fifth sized cell</div>
+        <div class="cell fifth outline"><p>One fifth sized cell</p></div>
+        <div class="cell fifth outline"><p>One fifth sized cell</p></div>
+        <div class="cell fifth outline"><p>One fifth sized cell</p></div>
+        <div class="cell fifth outline"><p>One fifth sized cell</p></div>
+        <div class="cell fifth outline"><p>One fifth sized cell</p></div>
     </div>
     <br />
     <h2 class="centered">800 px wide centered row</h2>
     <div class="centered width-800 row">
-        <div class="cell third outline"><p>One third sized cell</div>
-        <div class="cell third outline"><p>One third sized cell</div>
-        <div class="cell third outline"><p>One third sized cell</div>
+        <div class="cell third outline"><p>One third sized cell</p></div>
+        <div class="cell third outline"><p>One third sized cell</p></div>
+        <div class="cell third outline"><p>One third sized cell</p></div>
     </div>
     <br />
     <h2 class="centered">640 px wide centered row</h2>
     <div class="centered width-640 row">
-        <div class="cell half outline"><p>One half sized cell</div>
-        <div class="cell half outline"><p>One half sized cell</div>
+        <div class="cell half outline"><p>One half sized cell</p></div>
+        <div class="cell half outline"><p>One half sized cell</p></div>
+    </div>
+
+    <h2 class="centered">1024px wide inline-block elements</h2>
+    <div class="centered width-1024 row">
+        <div class="inline-cell forth outline"><p>One forth sized cell</p></div><!--
+        --><div class="inline-cell half outline"><p>One half sized cell</p></div><!--
+        --><div class="inline-cell forth outline"><p>One forth sized cell</p></div>
+    </div>
+
+    <h2 class="centered">Flex fox ftw</h2>
+    <div class="content-column group">
+        <div class="sixth outline padding"><p>Flex box</p></div>
+        <div class="sixth outline padding"><p>Flex box</p></div>
+        <div class="sixth outline padding"><p>Flex box</p></div>
+        <div class="sixth outline padding"><p>Flex box</p></div>
+        <div class="sixth outline padding"><p>Flex box</p></div>
+        <div class="sixth outline padding"><p>Flex box</p></div>
+    </div>
+
+    <h2 class="centered">Centered Flex</h2>
+    <div class="content-column centered group">
+        <div class="sixth outline padding"><p>Flex box</p></div>
+        <div class="sixth outline padding"><p>Flex box</p></div>
+        <div class="sixth outline padding"><p>Flex box</p></div>
     </div>
 </body>
 </html>

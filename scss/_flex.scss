@@ -1,0 +1,8 @@
+@mixin flex($content-width) {
+    .group {
+        display: flex;
+        &.centered {
+            justify-content:center;
+        }
+    }
+}

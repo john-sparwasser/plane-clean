@@ -1,41 +1,43 @@
-input[type="button"], .button {
-    background-color:$main;
-    border-radius:3px;
-    color:#fff;
-    padding:15px 22px;
-    font-size:14px;
-    text-transform:uppercase;
-    border:none;
-    font-weight:bold;
-    letter-spacing:0.1em;
-    cursor:pointer;
-    box-shadow: rgba(23, 43, 99, 0.24) 0 7px 28px;
-    display:inline-block;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-tap-highlight-color: transparent;
-    &:focus {
-        outline:0;
+@mixin buttons($main-color, $secondary-color, $tertiary-color, $font-color) {
+    input[type="button"], .button {
+        background-color:$main-color;
+        border-radius:3px;
+        color:#fff;
+        padding:15px 22px;
+        font-size:14px;
+        text-transform:uppercase;
+        border:none;
+        font-weight:bold;
+        letter-spacing:0.1em;
+        cursor:pointer;
+        box-shadow: rgba(23, 43, 99, 0.24) 0 7px 28px;
+        display:inline-block;
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-tap-highlight-color: transparent;
+        &:focus {
+            outline:0;
+        }
+        &:active {
+            -moz-transform: scale3d(0.94, 0.94, 0.94);
+            -ms-transform: scale3d(0.94, 0.94, 0.94);
+            -webkit-transform: scale3d(0.94, 0.94, 0.94);
+            transform: scale3d(0.94, 0.94, 0.94);
+            -moz-box-shadow: rgba(23, 43, 99, 0.24) 0 3px 18px;
+            -webkit-box-shadow: rgba(23, 43, 99, 0.24) 0 3px 18px;
+            box-shadow: rgba(23, 43, 99, 0.24) 0 3px 18px;
+        }
+        &.ghost {
+            background-color:transparent;
+            border:1px solid $main-color;
+            color:$main-color;
+            box-shadow:none;
+        }
     }
-    &:active {
-        -moz-transform: scale3d(0.94, 0.94, 0.94);
-        -ms-transform: scale3d(0.94, 0.94, 0.94);
-        -webkit-transform: scale3d(0.94, 0.94, 0.94);
-        transform: scale3d(0.94, 0.94, 0.94);
-        -moz-box-shadow: rgba(23, 43, 99, 0.24) 0 3px 18px;
-        -webkit-box-shadow: rgba(23, 43, 99, 0.24) 0 3px 18px;
-        box-shadow: rgba(23, 43, 99, 0.24) 0 3px 18px;
-    }
-    &.ghost {
-        background-color:transparent;
-        border:1px solid $main;
-        color:$main;
-        box-shadow:none;
-    }
-}
 
-a.button {
-    text-decoration:none;
+    a.button {
+        text-decoration:none;
+    }
 }
